@@ -70,9 +70,15 @@ a:hover{
 	color: #4ECDC4;
 }
 
+
+/*---------------------- Same in all Section  -----------------------*/
+
+
 .flex{
+	
 	display: flex;
 }
+
 .justify-content{
 	justify-content: space-between;
 	align-items: center;
@@ -84,30 +90,39 @@ section{
 
 }
 
-.margin{
-	margin-top: 120;
-	margin-bottom: 120px;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+.shadow:hover{
 
+	box-shadow: #4ECDC4 0px 7px 29px 0px;
+	border-radius: 25px;
+	transition: 0.6s; 	
+}
+.box{
+	border-radius: 25px;
+	padding: 15px;
 }
 
+/*---------------------- Section 1 -----------------------*/
+
+
 .bonjour{
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
+
 	background-color: black;
+}
+
+.contener {
+	justify-content: space-around;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	padding-top: 100px;
+	margin-bottom: 2px;
+
 }
 
 .description{
 
-	margin-top: 230px;
-	margin-left: 10px;
-
 }
 
-h1{
+.description h1{
 
 	color: #5AB1BB;
 	font-family: "Oswald", sans-serif;
@@ -128,7 +143,7 @@ h1{
 
 .login{
 
-	margin-top: 150px;
+	/*margin-top: 150px;*/
 	display: flex;
 	flex-direction: column;
 	align-items: space-between;
@@ -136,15 +151,15 @@ h1{
 
 .login img{
 
-	width: 175px;
-	height: 175px;
+	width: 300px;
+	height: 300px;
 
 
 }
 
 .login input{
 
-	margin-bottom: 15px;
+	margin-bottom: 6px;
 	margin-top: 5px;
 }
 
@@ -152,18 +167,110 @@ h1{
 
 	font-family: "Oswald",sans-serif;
 	color: white ;
-
 }
 
-      /* Section 2 */
+.margin_input_bottom{
+	margin-bottom: 0px;
+}
+
+	/*Scroll Down*/
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  opacity: .5;
+}
+
+#section10 a {
+  padding-top: 60px;
+}
+#section10 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#section10 a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/*---------------------- Section 2 -----------------------*/
+
+.margin{
+	margin-top: 120;
+	margin-bottom: 120px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
 
 .moi{
-	/*height: 675px;
-	background-color: #1D1A05;
-	*/	
-	background-image: url(Image/fondnoir2.webp);
-}
 
+}
+ 
 .margin{
 
 	/*padding-top: 30vh;*/
@@ -178,6 +285,15 @@ h1{
 	flex-direction: column;
 	justify-content: center;
  }
+ .text h1{
+
+	color: #5AB1BB;
+	font-family: "Oswald", sans-serif;
+	font-size: 80px;
+	font-weight: medium 500;
+	margin-bottom: 5px;
+	margin-top: 0px;
+}
 
 .moi img{
 
@@ -200,13 +316,16 @@ h1{
 
 }
 
-/* Section 3 */
+
+/*---------------------- Section 3 -----------------------*/
 
 
 
 
 
 
-/* Section 4 */
+
+/*---------------------- Section 4 -----------------------*/
+
 
 
