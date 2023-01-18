@@ -9,6 +9,16 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
 	<title>Yanis Makdoud</title>
+	<script>
+		function maFonction() {
+		  var div = document.getElementById("maDIV");
+		  if (div.style.display === "none") {
+		    div.style.display = "block";
+		  } else {
+		    div.style.display = "none";
+		  }
+		}
+	</script>
 </head>
 <body>
 	
@@ -20,19 +30,19 @@
 
 		<nav>
 			<ul>
-				<li><a href="#bonjour">Bonjour</a></li>
-				<li><a href="#moi">Moi</a></ol>
-				<li><a href="">Parcours</a></li>
-				<li><a href="">Projet</a></li>
-				<li><a href="">Compétence</a></li>
-				<li><a href="">Contact</a></li>
+				<li><a href="#Bonjour">Bonjour</a></li>
+				<li><a href="#Moi">Moi</a></ol>
+				<li><a href="#Parcours">Parcours</a></li>
+				<li><a href="#Projet">Projet</a></li>
+				<li><a href="#Competence">Compétence</a></li>
+				<li><a href="#Contact">Contact</a></li>
 			</ul>
 		</nav>
 
 	</header>
 <!------------------------------ Bonjour ------------------------------>
 
-	<section class="bonjour content-section ">	
+	<section class="bonjour content-section " id="Bonjour">	
 		
 		<div class="contener flex">		
 			<div class="description shadow box">
@@ -64,28 +74,25 @@
 
 <!-------------------------------- Moi ------------------------------------->
 
-	<section class="moi" >
-		
+	<section class="moi" id="Moi">
+
+		<div class="en-tete">
+			<h1>Moi</h1>
+		</div>
+	
+
 		<div class="margin">
 
-			<div class="text">
+			<div class="contener-moi-image">
 			
-				<h1>Moi</h1>
-
-				<p>c'est Yanis Makdoud, je suis un étudiant en licence Informatique & Management. Je m'intéresse beaucoup à l'informatique mais plus précisément, la cybersécurité. C'est un secteur que j'aime et dans lequel je veux évoluer plus tard.</p>
-				<p>La cybersécurité est pour moi une passion dans laquelle j’aime découvrir de nouvelles choses, me documenter et me retrouver face à des problèmes pour pouvoir les résoudre</p>
-				<p>Ce ne sont pas mes seuls points d'intérêt, je pratique aussi du sport (Musculation), j’aime courir et lire ! J’ai pu aussi faire partie d’associations tels que La Rêverie ou même faire des maraudes.</p>
-			
+				<img src="Image/pp.jpg" id="border">
+				<div class="flex img_little">
+					<img id="border-left" src="Image/yanis_sun.jpg">
+					<img id="border-right" src="Image/yanis_blue.png">
+				</div>
 			</div>
-			
-			<div class="flex justify-content">
-			
-				<img src="Image/singe.webp">	
-		
-			</div>
-
-			<div class="flex justify-content ">
-				
+			 
+			<div class="contener-moi-description">
 				<div class="description2 flex justify-content">
 					<div class="flex">
 						<div>
@@ -97,12 +104,19 @@
 							<p>Profession : Etudiant</p> 
 						</div>
 					</div>
-
-					<div class="button">
-						<button>Mon CV</button>
-					</div>
-
 				</div>
+				<div class="text">
+					<p>Moi, c'est Yanis Makdoud, je suis un étudiant en licence Informatique & Management. Je m'intéresse beaucoup à l'informatique mais plus précisément, la cybersécurité. C'est un secteur que j'aime et dans lequel je veux évoluer plus tard.</p>
+					<p>La cybersécurité est pour moi une passion dans laquelle j’aime découvrir de nouvelles choses, me documenter et me retrouver face à des problèmes pour pouvoir les résoudre</p>
+					<p>Ce ne sont pas mes seuls points d'intérêt, je pratique aussi du sport (Musculation), j’aime courir et lire ! J’ai pu aussi faire partie d’associations tels que La Rêverie ou même faire des maraudes.</p>
+				
+				</div>
+				<div class="button">
+					<a href="Image/Yanis.pdf"><button >Mon Cv</button></a>
+				</div>
+			</div>
+			<div class="img-last">
+				<img src="Image/lioncyber.png">
 			</div>
 		</div>
 
@@ -110,284 +124,385 @@
 		
 <!-------------------------------- Parcours ------------------------------>
 
-	<section>
+	<section id="Parcours">
 		
 		<div class="en-tete">
 			<h1>Parcours</h1>
 		</div>
 
-		<div class="flex" id="contener-parcours">
-			
-			<div class="post-fac">
-				<h2>Post-Fac :</h2>
-				<div class="case">
-					<h3>Lycée René Cassin</h3>
-					<p>2018-2019</p>
-				</div>
-				<div class="case">
-					<h3>Lycée Blaise Cendrars</h3>
-					<p>2019-2021</p>
-				</div>
-			</div>
-			
-			<div class="Diplome">
-				<h2>Diplome :</h2>
-				<div class="case">
-					<h3>Double Diplome Informatique & Management</h3>
-					<p>2018-2019</p>
-				</div>
-				<div class="case">
-					<h3>DU en Cybersécurité & Innovation</h3>
-					<p>2018-2019</p>
-				</div>
-			</div>
-			
-			<div class="experience professionnelle">
-				<h2>Expérience Professionnelle :</h2>
-				<div class="case">
-					<h3>Assistant DSI</h3>
-					<p>2017-2018</p>
-				</div>
-			</div>
+		<div class="flex contener-parcours">
 
+			<div class="flex">
+				<div class="contener-projet-description">
+					<img src="Image/cyber4.png">
+					<div class="contener-projet-description-p">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+			</div>
+			<div class="contener-parcours-case flex">
+				<div class="column-parcours">
+					<h2>Post-Fac :</h2>
+					<div class="case">
+					
+							<img src="Image/rene.jpeg">
+						
+						<div>
+							<h3>Lycée René Cassin</h3>
+							<p>2018-2019</p>
+						</div>
+					</div>
+					<div class="case">
+
+						<img src="Image/blaise.jpeg">
+
+						<div>
+							<h3>Lycée Blaise Cendrars</h3>
+							<p>2019-2021</p>
+						</div>
+					</div>
+				</div>
+		
+				<div class="column-parcours">
+					<h2>Diplome :</h2>
+					<div class="case">
+						
+						<img src="Image/iae.webp">
+
+						<div>
+							<h3>Double Diplome Informatique & Management</h3>
+							<p>2018-2019</p>
+						</div>
+					</div>
+					<div class="case">
+
+						<img src="Image/iae.webp">
+
+						<div>
+							<h3>DU en Cybersécurité & Innovation</h3>
+							<p>2018-2019</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="column-parcours">
+					<h2>Exp. Professionnelle :</h2>
+					<div class="case">
+						<img src="Image/artelia.png">
+						<div>
+							<h3>Assistant DSI</h3>
+							<p>2017-2018</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 	</section>
 
 <!---------------------------------- Projet ------------------------------>
-	<section>
+	<section id="Projet">
 		
 		<div class="en-tete">
 			<h1>Projet</h1>
 		</div>
-
-		<div class="contener-projet flex">
-			<div class="column-projet">
-				<h2>Professionnelle</h2>
-				<div class="column-projet-case">
-					<div class="case-projet">
-						<img src="Image/licence.png">
-						<div>
-							<p class="title">Hackhaton</p>
-							<p class="subtitle">2021</p>
+		<div class="contener-competence flex">
+			<div class="contener-projet flex">
+				<div class="column-projet">
+					<h2>Professionnelle</h2>
+					<div class="column-projet-case">
+						<div class="case-projet">
+							<img src="Image/iae.webp">
+							<div>
+								<p class="title">Hackhaton</p>
+								<p class="subtitle">2021</p>
+							</div>
 						</div>
-					</div>
 
-					<div class="case-projet">
-						<img src="Image/licence_manager.png">
-						<div>
-							<p class="title">Manager</p>
-							<p class="subtitle">2021-2022</p>
-						</div>
-					</div>
-					
-					<div class="case-projet">
-						<img src="Image/licence_elpme.png">
-						<div>
-							<p class="title">Site CHU</p>
-							<p class="subtitle">2022</p>
-						</div>
-					</div>
-
-					<div class="case-projet">
-						<img src="Image/licence.png">
-						<div>
-							<p class="title">Hackhaton</p>
-							<p class="subtitle">2022</p>
-						</div>
-					</div>
-
-					<div class="case-projet">
-						<img src="Image/licence_webtv.png">
-						<div>
-							<p class="title">Equipier WebTv</p>
-							<p class="subtitle">2022-2023</p>	
+						<div class="case-projet">
+							<img src="Image/iae.webp">
+							<div>
+								<p class="title">Manager</p>
+								<p class="subtitle">2021-2022</p>
+							</div>
 						</div>
 						
+						<div class="case-projet">
+							<img src="Image/logohospital.webp">
+							<div>
+								<p class="title">Site CHU</p>
+								<p class="subtitle">2022</p>
+							</div>
+						</div>
+
+						<div class="case-projet">
+							<img src="Image/iae.webp">
+							<div>
+								<p class="title">Hackhaton</p>
+								<p class="subtitle">2022</p>
+							</div>
+						</div>
+
+						<div class="case-projet">
+							<img src="Image/youtube.webp">
+							<div>
+								<p class="title">Equipier WebTv</p>
+								<p class="subtitle">2022-2023</p>	
+							</div>
+							
+						</div>
+
+						<div class="case-projet">
+							<img src="Image/blueteam.webp">
+							<div>
+								<p class="title">Blue Team</p>
+								<p class="subtitle">2022-2023</p>
+							</div>
+						</div>
+
+				
 					</div>
 
+				</div>
+				<div class="column-projet">
+					<h2>Personnelle</h2>
+					
 					<div class="case-projet">
-						<img src="Image/licence_blueteam.png">
+						<img src="Image/logo.png">
 						<div>
-							<p class="title">Blue Team</p>
-							<p class="subtitle">2022-2023</p>
+							<p class="title">Portfolio</p>
+							<p class="subtitle">2022</p>
 						</div>
 					</div>
-
-			
+					<div class="case-projet">
+						<img src="Image/fennec.png">
+						<div>
+							<p class="title">Recap'Cyber</p>
+							<p class="subtitle">2022</p>
+						</div>
+					</div>
 				</div>
 
+				<div class="column-projet">
+					<h2>Compétition</h2>
+					<div class="case-projet">
+						<img src="Image/oteria.png">
+						<div>
+							<p class="title">CTF Cybersécurité</p>
+							<p class="subtitle">2022</p>
+						</div>
+					</div>
+				</div>
+				
 			</div>
-			<div class="column-projet">
-				<h2>Personnelle</h2>
-				<div class="case-projet">
-					<img src="Image/logo.png">
-					<div>
-						<p class="title">Portfolio</p>
-						<p class="subtitle">2022</p>
+			
+			<div class="contener-projet flex">
+				<div class="contener-projet-description">
+					<img src="Image/lionart.png">
+					<div class="contener-projet-description-p">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
 				</div>
 			</div>
-
-			<div class="column-projet">
-				<h2>Compétition</h2>
-				<div class="case-projet">
-					<img src="Image/oteria.png">
-					<div>
-						<p class="title">CTF Cybersécurité</p>
-						<p class="subtitle">2022</p>
-					</div>
-				</div>
-			</div>
-			
 		</div>
-		
 	</section>
 
 <!------------------------------ Compétence ------------------------------>
 
-	<section>
+	<section id="Competence">
 		
 		<div class="en-tete">
 			<h1>Compétence</h1>
 		</div>	
 		<div class="contener-competence flex">
-			<div class="column-competence">
-				
-				<h2>Web</h2>
-				
-				<div class="case-competence flex">
-					<img src="Image/openclassrom.jpg">
-					<div>
-						<p class="title">Comprendre le web</p>
-						<p class="subtitle">OpenClassrooms</p>				
-					</div>
-
+			<div class="contener-competence-description">
+				<img src="Image/cyber3.png">
+				<div class="contener-competence-description-p">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
-	
-				<div class="case-competence flex">
-					<img src="Image/openclassrom.jpg">
-					<div>
-						<p class="title">HTML/CSS</p>
-						<p class="subtitle">OpenClassrooms</p>				
-					</div>
-
-				</div>
-				<div class="case-competence flex">
-					<img src="Image/openclassrom.jpg">
-					<div>
-						<p class="title">Initiez vous au PHP et mySQL</p>
-						<p class="subtitle">OpenClassrooms</p>				
-					</div>
-
-				</div>
-
 			</div>
-		
-			<div class="column-competence">
-				
-				<h2>Programmation</h2>
+			<div class="contener-competence-case flex">
+				<div class="column-competence">
+					
+					<h2>Web</h2>
+					
+					<div class="case-competence flex">
+						<img src="Image/openclassrom.jpg">
+						<div>
+							<p class="title">Comprendre le web</p>
+							<p class="subtitle">OpenClassrooms</p>				
+						</div>
+					</div>
 
-				<div class="case-competence flex">
-					<img src="Image/openclassrom.jpg">
-					<div>
-						<p class="title">Apprenez à programmer en Java</p>
-						<p class="subtitle">OpenClassrooms</p>		
+					<div class="case-competence flex">
+						<img src="Image/openclassrom.jpg">
+						<div>
+							<p class="title">HTML/CSS</p>
+							<p class="subtitle">OpenClassrooms</p>				
+						</div>
+
+					</div>
+					<div class="case-competence flex">
+						<img src="Image/openclassrom.jpg">
+						<div>
+							<p class="title">Initiez vous au PHP et mySQL</p>
+							<p class="subtitle">OpenClassrooms</p>				
+						</div>
+
 					</div>
 
 				</div>
-
-			</div>
-
-			<div class="column-competence">
-				<h2>Cybersécurité</h2>
-
-				<div class="case-competence flex">
-					<img src="Image/openclassrom.jpg">
-					<div>
-						<p class="title">Maîtrisez les risques juridiques<br> liés au numérique</p>
-						<p class="subtitle">OpenClassrooms</p>		
-					</div>
-
-				</div>
-
-				<div class="case-competence flex">
-					<img src="Image/openclassrom.jpg">
-					<div>
-						<p class="title">Découvrir l'univers de la cybersécurité</p>
-						<p class="subtitle">OpenClassrooms</p>		
-					</div>
-
-				</div>
-
-				<div class="case-competence flex">
-					<img src="Image/CNIL.jpg">
-					<div>
-						<p class="title">RGPD</p>
-						<p class="subtitle">CNIL</p>		
-					</div>
-
-				</div>
-
-				<div class="case-competence flex">
-					<img src="Image/anssi.webp">
-					<div>
-						<p class="title">SecNumAcademie</p>
-						<p class="subtitle">ANSSI</p>		
-					</div>
-
-				</div>
-
-			</div>
 			
-			<div class="column-competence">
-				<h2>Autres</h2>
-				
-				<div class="case-competence flex">
-					<img src="Image/mooc.webp">
-					<div>
-						<p class="title">Introduction à la culture vidéoludique</p>
-						<p class="subtitle">France Université Numérique</p>		
+				<div class="column-competence">
+					
+					<h2>Programmation</h2>
+
+					<div class="case-competence flex">
+						<img src="Image/openclassrom.jpg">
+						<div>
+							<p class="title">Apprenez à programmer en Java</p>
+							<p class="subtitle">OpenClassrooms</p>		
+						</div>
+
 					</div>
 
 				</div>
 
-				<div class="case-competence flex">
-					<img src="Image/mooc.webp">
-					<div>
-						<p class="title">Défis technologique <br>des villes intelligentes participatives</p>
-						<p class="subtitle">France Université Numérique</p>		
+				<div class="column-competence">
+					<h2>Cybersécurité</h2>
+
+					<div class="case-competence flex">
+						<img src="Image/openclassrom.jpg">
+						<div>
+							<p class="title">Maîtrisez les risques juridiques<br> liés au numérique</p>
+							<p class="subtitle">OpenClassrooms</p>		
+						</div>
+
 					</div>
 
-				</div>				
+					<div class="case-competence flex">
+						<img src="Image/openclassrom.jpg">
+						<div>
+							<p class="title">Découvrir l'univers de la cybersécurité</p>
+							<p class="subtitle">OpenClassrooms</p>		
+						</div>
 
-				<div class="case-competence flex">
-					<img src="Image/croixrouge.jpg">
-					<div>
-						<p class="title">Formations aux premiers secours</p>
-						<p class="subtitle">Croix-Rouge Française</p>		
 					</div>
 
-				</div>	
+					<div class="case-competence flex">
+						<img src="Image/CNIL.jpg">
+						<div>
+							<p class="title">RGPD</p>
+							<p class="subtitle">CNIL</p>		
+						</div>
 
+					</div>
+
+					<div class="case-competence flex">
+						<img src="Image/anssi.webp">
+						<div>
+							<p class="title">SecNumAcademie</p>
+							<p class="subtitle">ANSSI</p>		
+						</div>
+
+					</div>
+
+				</div>
+				
+				<div class="column-competence">
+					<h2>Autres</h2>
+					
+					<div class="case-competence flex">
+						<img src="Image/mooc.webp">
+						<div>
+							<p class="title">Introduction à la culture vidéoludique</p>
+							<p class="subtitle">France Université Numérique</p>		
+						</div>
+
+					</div>
+
+					<div class="case-competence flex">
+						<img src="Image/mooc.webp">
+						<div>
+							<p class="title">Défis technologique <br>des villes intelligentes participatives</p>
+							<p class="subtitle">France Université Numérique</p>		
+						</div>
+
+					</div>				
+
+					<div class="case-competence flex">
+						<img src="Image/croixrouge.jpg">
+						<div>
+							<p class="title">Formations aux premiers secours</p>
+							<p class="subtitle">Croix-Rouge Française</p>		
+						</div>
+
+					</div>	
+
+				</div>
 			</div>
 		</div>
 	</section>
 
 <!------------------------------ Contact --------------------------------->
-	<footer>
-		<div class="flex center">
-			<h1>Contact</h1>
+	<footer id="Contact">
+		<div class="flex center top">
+			<h1 name="Contact">Contact</h1>
 		</div>
-		<div class="contener-contact">
+		<div class="contener-contact flex">	
 			
-			<div class="contact">
+			<div class="contact flex">
+				<div class="flex center">
+					<h2>Un petit mail !</h2>
+				</div>
+				<div class="margin-contact">
+					<input type="text" name="c.name" placeholder="Nom" id="margin-user">
+					<input type="text" name="c.surname" placeholder="Prénom" id="margin-user">
+				</div>
+
+				<div class="margin-contact">
+					<input type="mail" name="c.mail" id="margin-size" placeholder="Email">
+				</div>
+
+				<div class="margin-contact">
+					<input type="text" name="c.objet" id="margin-size" placeholder="Objet">
+				</div>
+
+				<div class="margin-contact">
+					<input type="text" name="c.description" id="margin-size-description" placeholder="description">
+				</div>
+			</div>
+			<div class="border-contact">
 				
 			</div>
-			
-			<div class="reseau">
-				
+
+			<div class="reseau flex">
+				<div class="flex center">
+					<h2>Mes Réseaux Sociaux !</h2>
+				</div>
+              	<div>
+              		<a href="https://www.linkedin.com/in/yanis-makdoud/"><img src="Image/linkedin.webp"></a>
+              		<a href="https://www.instagram.com/yanis_mkd/"><img src="Image/insta.webp" alt="Instagram"></a>
+              		<a href="https://www.twitter.com"><img src="Image/twitter.webp"></a>
+              		<a href="https://www.github.com"><img src="Image/git.webp"></a>
+				</div>
 			</div>
+
 		</div>
 	</footer>
 
